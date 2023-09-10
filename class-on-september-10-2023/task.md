@@ -6,7 +6,7 @@ Seja bem-vindo ao nosso primeiro encontro! Estou empolgado para começarmos a ex
 
 ## Tópico 1: Instalação e Configuração do Ambiente
 
-- [X] **O que é Git e Github**
+- [ ] **O que é Git e Github**
     - Entenderemos os conceitos fundamentais de controle de versão com Git e a plataforma de hospedagem Github.
 
 - [ ] **Cadastro no Github**
