@@ -6,40 +6,40 @@ Seja bem-vindo ao nosso primeiro encontro! Estou empolgado para começarmos a ex
 
 ## Tópico 1: Instalação e Configuração do Ambiente
 
-- [ ] **O que é Git e Github**
+- [X] **O que é Git e Github**
     - Entenderemos os conceitos fundamentais de controle de versão com Git e a plataforma de hospedagem Github.
 
-- [ ] **Cadastro no Github**
+- [X] **Cadastro no Github**
     - Caso ainda não tenha uma conta, vamos passar pelo processo de criação.
 
-- [ ] **Instalação e Configuração do Git**
+- [X] **Instalação e Configuração do Git**
     - Aprenderemos como instalar e configurar o Git em seu ambiente.
 
-- [ ] **Criação de um Repositório no Github**
+- [X] **Criação de um Repositório no Github**
     - Vamos criar um novo repositório no Github para armazenar nossos projetos.
 
-- [ ] **Criação de uma Pasta Local e Vinculação ao Repositório no Github**
+- [X] **Criação de uma Pasta Local e Vinculação ao Repositório no Github**
     - Criaremos uma pasta local em seu computador e a vincularemos ao repositório criado.
 
-- [ ] **Montagem de um README.md**
+- [X] **Montagem de um README.md**
     - Criaremos um arquivo README.md para documentar nosso projeto.
 
-- [ ] **Envio para o Repositório no Github**
+- [X] **Envio para o Repositório no Github**
     - Utilizaremos o Git para adicionar, confirmar e enviar os arquivos do projeto para o repositório no Github.
 
-- [ ] **O que é uma IDE**
+- [X] **O que é uma IDE**
     - Explicaremos o conceito de Integrated Development Environment (Ambiente de Desenvolvimento Integrado).
 
-- [ ] **O que é o Eclipse**
+- [X] **O que é o Eclipse**
     - Introdução ao ambiente de desenvolvimento Eclipse.
 
-- [ ] **Download, Instalação e Configuração do Eclipse**
+- [X] **Download, Instalação e Configuração do Eclipse**
     - Passos para baixar, instalar e configurar o Eclipse em seu sistema.
 
-- [ ] **O Que é VSCode**
+- [X] **O Que é VSCode**
     - Apresentação do editor de código Visual Studio Code.
 
-- [ ] **Download, Instalação e Configuração do VSCode**
+- [X] **Download, Instalação e Configuração do VSCode**
     - Demonstração do processo de download, instalação e configuração do VSCode.
 
 ## Tópico 2: HTML e Estrutura Básica
