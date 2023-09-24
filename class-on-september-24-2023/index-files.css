@@ -1,0 +1,47 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+img, audio, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para as seções específicas */
+.audios audio,
+.videos video {
+    width: 100%;
+}
+
+/* Adicionando algum espaçamento */
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+h1, a {
+    color: #ac0a0a;
+}
+
+body, section, img, audio, video {
+    background-color: #fff;
+}
