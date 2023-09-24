@@ -44,24 +44,24 @@ Seja bem-vindo ao nosso primeiro encontro! Estou empolgado para começarmos a ex
 
 ## Tópico 2: HTML e Estrutura Básica
 
-- [ ] **O que é HTML**
+- [X] **O que é HTML**
     - Introdução à linguagem de marcação HyperText Markup Language (HTML).
 
-- [ ] **Estrutura Básica do HTML**
+- [X] **Estrutura Básica do HTML**
     - Entenderemos a estrutura básica de um documento HTML.
 
-- [ ] **Exemplos Práticos**
+- [X] **Exemplos Práticos**
     - Veremos exemplos práticos de como criar elementos HTML.
 
 ## Tópico 3: CSS e Estrutura Básica
 
-- [ ] **O que é CSS**
+- [X] **O que é CSS**
     - Introdução às Cascading Style Sheets (CSS).
 
-- [ ] **Estrutura Básica de CSS**
+- [X] **Estrutura Básica de CSS**
     - Exploraremos a estrutura básica de um arquivo CSS.
 
-- [ ] **Exemplos Práticos**
+- [X] **Exemplos Práticos**
     - Veremos exemplos de como aplicar estilos em elementos HTML.
 
 Fique à vontade para fazer perguntas e compartilhar suas experiências. Vamos começar!
