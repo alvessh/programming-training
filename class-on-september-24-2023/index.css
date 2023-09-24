@@ -1,0 +1,333 @@
+/* Definição de Variáveis CSS */
+:root {
+  --primary: #141414;
+  /* Cor primária, preto escuro */
+  --light: #F3F3F3;
+  /* Cor clara, cinza claro */
+  --dark: #686868;
+  /* Cor escura, cinza médio */
+}
+
+/* Estilos gerais para a página */
+html,
+body {
+  width: 100vw;
+  /* Largura total da janela visível */
+  min-height: 100vh;
+  /* Altura mínima igual à altura da janela visível */
+  margin: 0;
+  /* Margens zeradas */
+  padding: 0;
+  /* Preenchimento zerado */
+  background-color: var(--primary);
+  /* Cor de fundo usando a variável primária */
+  color: var(--light);
+  /* Cor do texto usando a variável clara */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Fonte do texto */
+  box-sizing: border-box;
+  /* Modelo de caixa: inclui borda no cálculo de tamanho */
+  line-height: 1.4;
+  /* Espaçamento entre linhas */
+}
+
+/* Estilos para todas as imagens */
+img {
+  max-width: 100%;
+  /* Imagem não pode exceder a largura do contêiner pai */
+}
+
+/* Estilos específicos para o elemento h1 */
+h1 {
+  padding-top: 60px;
+  /* Preenchimento superior de 60 pixels */
+}
+
+/* Resetando margens e preenchimentos para elementos com a classe .wrapper */
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho (header) */
+header {
+  padding: 20px 20px 0 20px;
+  /* Preenchimento do cabeçalho */
+  position: fixed;
+  /* Cabeçalho fixo no topo da página */
+  top: 0;
+  /* Alinhado ao topo da página */
+  display: grid;
+  /* Elemento é um grid container */
+  grid-gap: 5px;
+  /* Espaço entre as células do grid */
+  grid-template-columns: 1fr 4fr 1fr;
+  /* Layout de colunas do grid */
+  grid-template-areas: "nt mn mn sb . . . ";
+  /* Layout das áreas do grid */
+  background-color: var(--primary);
+  /* Cor de fundo usando a variável primária */
+  width: 100%;
+  /* Largura total do cabeçalho */
+  margin-bottom: 0px;
+  /* Margem inferior zerada */
+}
+
+/* Estilos para o logotipo da Netflix */
+.netflixLogo {
+  grid-area: nt;
+  /* Ocupa a área definida como 'nt' no grid do cabeçalho */
+  object-fit: cover;
+  /* A imagem cobre o espaço do elemento mantendo proporções */
+  width: 100px;
+  /* Largura máxima de 100 pixels */
+  max-height: 100%;
+  /* Altura máxima igual a 100% do elemento pai */
+  padding-left: 30px;
+  /* Preenchimento à esquerda de 30 pixels */
+  padding-top: 0px;
+  /* Preenchimento superior de 0 pixels */
+}
+
+/* Estilos específicos para a imagem dentro do logotipo da Netflix */
+.netflixLogo img {
+  height: 35px;
+  /* Altura da imagem de 35 pixels */
+}
+
+/* Estilos para o elemento com o ID 'logo' */
+#logo {
+  color: #E50914;
+  /* Cor do texto é um vermelho específico */
+  margin: 0;
+  /* Margem zerada */
+  padding: 0;
+  /* Preenchimento zerado */
+}
+
+
+/* Estilos para a navegação principal */
+.main-nav {
+  grid-area: mn; /* Define a área da grade */
+  padding: 0 30px 0 20px; /* Define o preenchimento */
+}
+
+.main-nav a {
+  color: var(--light); /* Define a cor do texto */
+  text-decoration: none; /* Remove a decoração do texto */
+  margin: 5px; /* Define a margem */
+}
+
+.main-nav a:hover {
+  color: var(--dark); /* Define a cor do texto ao passar o mouse por cima */
+}
+
+/* Estilos para a navegação secundária */
+.sub-nav {
+  grid-area: sb; /* Define a área da grade */
+  padding: 0 40px 0 40px; /* Define o preenchimento */
+}
+
+.sub-nav a {
+  color: var(--light); /* Define a cor do texto */
+  text-decoration: none; /* Remove a decoração do texto */
+  margin: 5px; /* Define a margem */
+}
+
+.sub-nav a:hover {
+  color: var(--dark); /* Define a cor do texto ao passar o mouse por cima */
+}
+
+
+/* CONTAINER PRINCIPAL */
+.main-container {
+  padding: 50px; /* Define o preenchimento */
+}
+
+/* Estilos para as caixas */
+.box {
+  display: grid; /* Define o layout de grade */
+  grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+  grid-template-columns: repeat(6, minmax(100px, 1fr)); /* Define as colunas da grade */
+}
+
+.box a {
+  transition: transform .3s; /* Define a transição para a transformação */
+}
+
+.box a:hover {
+  transition: transform .3s; /* Define a transição para a transformação */
+  -ms-transform: scale(1.4); /* Aplica a transformação de escala no Internet Explorer */
+  -webkit-transform: scale(1.4); /* Aplica a transformação de escala no navegador Webkit */
+  transform: scale(1.4); /* Aplica a transformação de escala */
+}
+
+.box img {
+  border-radius: 2px; /* Adiciona bordas arredondadas às imagens */
+}
+
+/* Estilos para os links */
+.link {
+  padding: 50px; /* Define o preenchimento */
+}
+
+/* Estilos para os sub-links */
+.sub-links ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o espaçamento interno da lista */
+  display: grid; /* Define o layout de grade */
+  grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+  grid-template-columns: repeat(4, 1fr); /* Define as colunas da grade */
+}
+
+.sub-links a {
+  color: var(--dark); /* Define a cor do texto */
+  text-decoration: none; /* Remove a decoração do texto */
+}
+
+.sub-links a:hover {
+  color: var(--dark); /* Define a cor do texto ao passar o mouse por cima */
+  text-decoration: underline; /* Adiciona sublinhado ao texto ao passar o mouse por cima */
+}
+
+/* Estilos para os logos */
+.logos a {
+  padding: 10px; /* Define o preenchimento */
+}
+
+.logo {
+  color: var(--dark); /* Define a cor do texto */
+}
+
+/* Estilos para o footer */
+footer {
+  padding: 20px; /* Define o preenchimento */
+  text-align: center; /* Centraliza o texto */
+  color: var(--dark); /* Define a cor do texto */
+  margin: 10px; /* Define a margem */
+}
+
+/* Estilos para a grade no header em telas pequenas */
+@media(max-width: 900px) {
+
+  header {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(2, 1fr); /* Define as colunas da grade */
+    grid-template-areas:
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn"; /* Define as áreas da grade */
+  }
+
+  .box {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(4, minmax(100px, 1fr)); /* Define as colunas da grade */
+  }
+
+}
+
+/* Estilos para a grade no header em telas muito pequenas */
+@media(max-width: 700px) {
+
+  header {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(2, 1fr); /* Define as colunas da grade */
+    grid-template-areas:
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn"; /* Define as áreas da grade */
+  }
+
+  .box {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Define as colunas da grade */
+  }
+
+  .sub-links ul {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(3, 1fr); /* Define as colunas da grade */
+  }
+
+}
+
+/* Media Query para telas com largura máxima de 500px */
+@media(max-width: 500px) {
+
+  /* Ajustes para o wrapper */
+  .wrapper {
+    font-size: 15px; /* Define o tamanho da fonte */
+  }
+
+  /* Ajustes para o header */
+  header {
+    margin: 0; /* Remove a margem */
+    padding: 20px 0 0 0; /* Define o preenchimento */
+    position: static; /* Define a posição como estática */
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(1, 1fr); /* Define as colunas da grade */
+    grid-template-areas:
+      "nt"
+      "mn"
+      "sb"; /* Define as áreas da grade */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* Ajustes para o logotipo do Netflix */
+  .netflixLogo {
+    max-width: 100%; /* Define a largura máxima */
+    margin: auto; /* Centraliza na horizontal */
+    padding-right: 20px; /* Define o preenchimento na direita */
+  }
+
+  /* Ajustes para a navegação principal */
+  .main-nav {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 0px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(1, 1fr); /* Define as colunas da grade */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* Ajustes para o título h1 */
+  h1 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+  }
+
+  /* Ajustes para as caixas */
+  .box {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(1, 1fr); /* Define as colunas da grade */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* Efeito de escala ao passar o mouse sobre os links */
+  .box a:hover {
+    transition: transform .3s; /* Define a transição para a transformação */
+    -ms-transform: scale(1); /* Aplica a transformação de escala no Internet Explorer */
+    -webkit-transform: scale(1); /* Aplica a transformação de escala no navegador Webkit */
+    transform: scale(1.2); /* Aplica a transformação de escala */
+  }
+
+  /* Ajustes para os logos */
+  .logos {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(2, 1fr); /* Define as colunas da grade */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  /* Ajustes para os sub-links */
+  .sub-links ul {
+    display: grid; /* Define o layout de grade */
+    grid-gap: 20px; /* Define o espaçamento entre as células da grade */
+    grid-template-columns: repeat(1, 1fr); /* Define as colunas da grade */
+    text-align: center; /* Centraliza o texto */
+    font-size: 15px; /* Define o tamanho da fonte */
+  }
+
+}

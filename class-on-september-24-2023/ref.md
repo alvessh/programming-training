@@ -1,0 +1,1 @@
+## Clone da NetFlix com base no: https://codepen.io/cb2307/pen/XYxyeY
