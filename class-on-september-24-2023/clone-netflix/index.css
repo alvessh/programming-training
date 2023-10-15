@@ -147,6 +147,10 @@ header {
 /* Estilos para as caixas */
 .box {
   display: grid; /* Define o layout de grade */
+  /*é uma propriedade do CSS que permite a criação de layouts de página complexos, 
+  dividindo o espaço disponível em uma grade de linhas e colunas. 
+  É uma técnica poderosa para organizar elementos HTML de forma mais flexível
+   e eficiente do que as abordagens tradicionais usando floats ou posicionamento absoluto.*/
   grid-gap: 20px; /* Define o espaçamento entre as células da grade */
   grid-template-columns: repeat(6, minmax(100px, 1fr)); /* Define as colunas da grade */
 }
