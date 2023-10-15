@@ -163,7 +163,7 @@ header {
   transition: transform .3s; /* Define a transição para a transformação */
   -ms-transform: scale(1.4); /* Aplica a transformação de escala no Internet Explorer */
   -webkit-transform: scale(1.4); /* Aplica a transformação de escala no navegador Webkit */
-  transform: scale(1.4); /* Aplica a transformação de escala */
+  transform: scale(0.7); /* Aplica a transformação de escala */
 }
 
 .box img {
