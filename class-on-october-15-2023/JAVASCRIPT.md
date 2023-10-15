@@ -1,0 +1,1 @@
+JavaScript é uma linguagem de programação de alto nível que é amplamente utilizada para criar interatividade em páginas da web. Ela permite aos desenvolvedores adicionar funcionalidades dinâmicas, como animações, validações de formulários, manipulação do DOM (Document Object Model) e comunicação com servidores, tornando as páginas mais dinâmicas e responsivas.
