@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de DOM</title>
+</head>
+
+<body>
+    <h1 onmouseover="mostrarMensagemAoPassarMouseNaTela()">Meu Título</h1>
+    <p>Um parágrafo de texto.</p>
+    <button onclick="mostrarMensagem()" onmouseover="alterarBackGroundColorBody('pink')">Clique Aqui</button>
+    <button onclick="mudarMeuCorpoHTML('<p>um parágrafo</p>')">Mudar html</button>
+</body>
+
+<script>
+    function mostrarMensagem() {
+        console.log("Eu cliquei no botão!..");
+    }
+
+    function mostrarMensagemAoPassarMouseNaTela() {
+        console.log("Eu mexi no mouse!");
+
+        document.body.style.backgroundColor = "blue";
+    }
+
+    function alterarBackGroundColorBody(color) {
+        document.body.style.backgroundColor = color;
+    }
+
+    function mudarMeuCorpoHTML(text){
+        document.title = "NOVO TITULO HAHAH"
+        document.body.innerHTML = text;
+        document.body.innerHTML += '<a href="https://www.w3schools.com/" target="_blank">W3schools</a>';
+    }
+
+</script>
+
+</html>
