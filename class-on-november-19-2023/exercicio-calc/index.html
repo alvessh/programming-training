@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <form onsubmit="calculate(event)">
+            <input type="number" id="num1" name="num1" required>
+            <input type="number" id="num2" name="num2" required>
+            <select id="operator" name="operator" required>
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <button type="submit">Calcular</button>
+        </form>
+        <p id="result">Resultado: </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

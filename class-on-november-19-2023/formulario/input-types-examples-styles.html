@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos de Inputs HTML Estilizados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="search"],
+    input[type="date"],
+    input[type="time"],
+    input[type="number"],
+    input[type="color"],
+    input[type="range"],
+    input[type="checkbox"],
+    input[type="radio"],
+    input[type="file"],
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input[type="image"] {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+    }
+
+    input[type="image"] {
+      padding: 0;
+      width: auto;
+      height: auto;
+      border: none;
+      margin-bottom: 0;
+    }
+
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"] {
+      background-color: #4285f4;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover {
+      background-color: #0f9d58;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <label for="buttonInput">Button:</label>
+    <input type="button" id="buttonInput" value="Botão">
+
+    <label for="checkboxInput">Checkbox:</label>
+    <input type="checkbox" id="checkboxInput" name="checkbox" value="check">
+
+    <label for="colorInput">Color:</label>
+    <input type="color" id="colorInput" name="color">
+
+    <label for="dateInput">Date:</label>
+    <input type="date" id="dateInput" name="date">
+
+    <label for="datetimeLocalInput">Datetime-local:</label>
+    <input type="datetime-local" id="datetimeLocalInput" name="datetime-local">
+
+    <label for="emailInput">Email:</label>
+    <input type="email" id="emailInput" name="email">
+
+    <label for="fileInput">File:</label>
+    <input type="file" id="fileInput" name="file">
+
+    <label for="hiddenInput">Hidden:</label>
+    <input type="hidden" id="hiddenInput" name="hidden">
+
+    <label for="imageInput">Image:</label>
+    <input type="image" id="imageInput" src="https://github.com/alvessh.png" alt="Imagem">
+
+    <label for="monthInput">Month:</label>
+    <input type="month" id="monthInput" name="month">
+
+    <label for="numberInput">Number:</label>
+    <input type="number" id="numberInput" name="number">
+
+    <label for="passwordInput">Password:</label>
+    <input type="password" id="passwordInput" name="password">
+
+    <label for="radioInput1">Radio 1:</label>
+    <input type="radio" id="radioInput1" name="radio" value="radio1">
+    <label for="radioInput2">Radio 2:</label>
+    <input type="radio" id="radioInput2" name="radio" value="radio2">
+
+    <label for="rangeInput">Range:</label>
+    <input type="range" id="rangeInput" name="range">
+
+    <label for="resetInput">Reset:</label>
+    <input type="reset" id="resetInput" value="Resetar">
+
+    <label for="searchInput">Search:</label>
+    <input type="search" id="searchInput" name="search">
+
+    <label for="submitInput">Submit:</label>
+    <input type="submit" id="submitInput" value="Enviar">
+
+    <label for="telInput">Tel:</label>
+    <input type="tel" id="telInput" name="tel">
+
+    <label for="textInput">Text:</label>
+    <input type="text" id="textInput" name="text">
+
+    <label for="timeInput">Time:</label>
+    <input type="time" id="timeInput" name="time">
+
+    <label for="urlInput">URL:</label>
+    <input type="url" id="urlInput" name="url">
+
+    <label for="weekInput">Week:</label>
+    <input type="week" id="weekInput" name="week">
+  </form>
+</body>
+</html>
