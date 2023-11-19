@@ -22,15 +22,15 @@ function changeLights() {
     redLight.style.opacity = 0.3;
     yellowLight.style.opacity = 1;
     greenLight.style.opacity = 0.3;
-  }, 4000);
+  }, 10000);
 
   setTimeout(() => {
     redLight.style.opacity = 0.3;
     yellowLight.style.opacity = 0.3;
     greenLight.style.opacity = 1;
-  }, 7000);
+  }, 25000);
 
-  setTimeout(changeLights, 10000);
+  setTimeout(changeLights, 30000);
 }
 ```
 ```changeLights()```: É uma função que controla o ciclo das luzes do semáforo. Ela usa setTimeout para executar as mudanças de cor das luzes em intervalos de tempo específicos.
