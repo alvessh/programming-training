@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Testando javascript</title>
+</head>
+<body>
+    <h1>Testando javascript</h1>
+    <input type="submit" 
+    value="Azul" onmouseleave="trocarCor('blue')">
+
+    <input type="submit" 
+    value="Preto" onmouseleave="trocarCor('black')">
+
+    <input type="submit" 
+    value="Vermelho" onmouseleave="trocarCor('red')">
+</body>
+<script>
+    console.log("Hello world!")
+    let mudeiACor = false;
+    function trocarCor(color) {
+        if (mudeiACor === false) {
+            document.body.style.backgroundColor = color;
+            mudeiACor = true;
+        } else {
+            document.body.style.backgroundColor = "white";
+            mudeiACor = false;
+        }
+    }
+
+</script>
+</html>
