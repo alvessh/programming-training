@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+
+<body>
+    <form onsubmit="cadastrar(event)">
+        <label>Informe seu nome</label>
+        <input type="text" id="nome" placeholder="Informe seu nome aqui" required>
+        </br>
+        <label>Informe a sua data de nascimento: </label>
+        <input type="date" id="dataNascimento" placeholder="Informe seu nascimento aqui" required>
+        </br>
+        <label>Informe seu e-mail: </label>
+        <input type="text" id="email" placeholder="Informe aqui o seu email" required> <input type="text" id="provider"
+            readonly value="@gmail.com">
+        </br>
+        <label>Informe seu endereço: </label>
+        <input type="text" id="endereco" placeholder="Informe aqui o seu endereço" required>
+        </br>
+        <label>Cadastre uma senha: </label>
+        <input type="password" id="senha" required><input type="submit" value="Mostrar a senha">
+        </br>
+        <input type="submit" value="Efetuar o cadastro">
+    </form>
+
+    <div id="conteudo">
+        <table border="1" id="tabela">
+
+        </table>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
