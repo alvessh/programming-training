@@ -40,3 +40,41 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
+
+/* Adicione os estilos para os botões aqui */
+
+.concluir-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.alterar-desc-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.alterar-resp-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cancelar-btn {
+    background-color: #555555;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
