@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Lista de tarefas</h1>
-    <form onsubmit="add(event)">
+    <form onsubmit="add(event)" id="form-tarefa">
         <label for="descricao">Descrição da tarefa:</label>
         <input type="text" id="descricao" placeholder="Digite a descrição da tarefa">
         
@@ -19,12 +19,9 @@
     </form>
     <div>
         <table id="lista-de-tarefas">
-            <tr>
-                <th>Descrição da tarefa</th>
-                <th>Status da tarefa</th>
-                <th>Responsável pela tarefa</th>
-            </tr>
+         
         </table>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
