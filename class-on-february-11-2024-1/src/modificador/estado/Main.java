@@ -9,5 +9,12 @@ public class Main {
 		
 		Produto.peso = 10.10;
 		
+		if (1==1) {
+			int a = 10;
+
+
+			int aa = 12;
+			System.out.println(a);
+		}
 	}
 }
