@@ -1,20 +1,22 @@
 package modificador.acesso;
 
 public class Pessoa {
-	protected String nome;
-	private Integer idade = 12;
-
-	//INFORMA A IDADE
+	private String nome = "Itamar";
+	private Integer idade = 10;
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
 	public void setIdade(Integer idade) {
 		this.idade = idade;
 	}
 	
-	//BUSCA A IDADE INFORMADA
 	public Integer getIdade() {
 		return this.idade;
 	}
-	
-	protected String getNome() {
-		return this.nome;
-	}
-}
+} 
