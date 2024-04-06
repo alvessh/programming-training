@@ -9,8 +9,8 @@ public class Idade {
 		System.out.println("Informe a sua idade: ");
 		Integer idade = scanner.nextInt();
 		
-		System.out.println("Informe a sua fjasdkfjlksd: ");
-		String batata = scanner.nextLine();
+//		System.out.println("Informe a sua fjasdkfjlksd: ");
+//		String batata = scanner.nextLine();
 		
 		if (idade >= 18) {
 			System.out.println("A Pessoa é maior de idade");
