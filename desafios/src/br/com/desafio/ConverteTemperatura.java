@@ -1,5 +1,12 @@
 package br.com.desafio;
 
+/*
+ * Descrição
+
+	Conversor de Temperatura: Implemente um programa em Java que converta 
+	uma temperatura em graus Celsius para Fahrenheit e vice-versa.
+ */
+
 public class ConverteTemperatura {
 	public static void main(String[] args) {
 		System.out.println(converteCelsiusParaFahrenheit(10.0));
