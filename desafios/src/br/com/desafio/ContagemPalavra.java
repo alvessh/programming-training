@@ -24,6 +24,7 @@ public class ContagemPalavra {
 		Map<String, Integer> mapContagemPalavra = new HashMap<>();
 
 		// Divide a frase em palavras usando espaço como delimitador
+		//o céu está azul e o sol está brilhando
 		String[] palavras = frase.split(" ");
 
 		for (String palavra : palavras) {
