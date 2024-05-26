@@ -1,13 +1,13 @@
 package br.com.tarefa.model;
 
-public class Tarefa {
+public class TarefaModel {
 	
 	private Integer id;
 	private String descricao;
-	private Status status;
+	private StatusModel status;
 	private Integer percentual;
-	private Pessoa pessoaPrestadorResponsavel;
-	private Pessoa pessoaRequisitante;
+	private PessoaModel pessoaPrestadorResponsavel;
+	private PessoaModel pessoaRequisitante;
 	
 	public Integer getId() {
 		return id;
@@ -21,10 +21,10 @@ public class Tarefa {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public Status getStatus() {
+	public StatusModel getStatus() {
 		return status;
 	}
-	public void setStatus(Status status) {
+	public void setStatus(StatusModel status) {
 		this.status = status;
 	}
 	public Integer getPercentual() {
@@ -33,16 +33,16 @@ public class Tarefa {
 	public void setPercentual(Integer percentual) {
 		this.percentual = percentual;
 	}
-	public Pessoa getPessoaPrestador() {
+	public PessoaModel getPessoaPrestador() {
 		return pessoaPrestadorResponsavel;
 	}
-	public void setPessoaPrestador(Pessoa pessoaPrestador) {
+	public void setPessoaPrestador(PessoaModel pessoaPrestador) {
 		this.pessoaPrestadorResponsavel = pessoaPrestador;
 	}
-	public Pessoa getPessoaRequisitante() {
+	public PessoaModel getPessoaRequisitante() {
 		return pessoaRequisitante;
 	}
-	public void setPessoaRequisitante(Pessoa pessoaRequisitante) {
+	public void setPessoaRequisitante(PessoaModel pessoaRequisitante) {
 		this.pessoaRequisitante = pessoaRequisitante;
 	}
 }

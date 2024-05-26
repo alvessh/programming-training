@@ -1,6 +1,6 @@
 package br.com.tarefa.model;
 
-public class Pessoa {
+public class PessoaModel {
 	private Integer id;
 	private String nome;
 	private Integer idade;

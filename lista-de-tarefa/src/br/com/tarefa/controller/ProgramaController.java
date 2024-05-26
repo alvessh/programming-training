@@ -2,14 +2,14 @@ package br.com.tarefa.controller;
 
 import java.util.Scanner;
 
-import br.com.tarefa.view.InicioPrograma;
+import br.com.tarefa.view.ProgramaView;
 
 public class ProgramaController {
 	Scanner teclado = new Scanner(System.in);
 
 	public void menu() {
 
-		InicioPrograma inicio = new InicioPrograma();
+		ProgramaView inicio = new ProgramaView();
 		inicio.mensagemBoasVindas();
 
 		String opcao = "S";
