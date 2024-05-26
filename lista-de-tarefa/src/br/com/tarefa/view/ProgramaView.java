@@ -44,4 +44,8 @@ public class ProgramaView {
 			System.out.println(i+1 + " - " + opcaoArray[i]);
 		}
 	}
+
+	public void informaOpcaoInvalida() {
+		System.out.println("Você informou uma opção inválida!");
+	}
 }
