@@ -1,10 +1,10 @@
 package br.com.tarefa;
 
-import br.com.tarefa.view.InicioPrograma;
+import br.com.tarefa.controller.ProgramaController;
 
 public class ProgramaListaTarefa {
 	public static void main(String[] args) {
-		InicioPrograma inicio = new InicioPrograma();
-		inicio.mensagemBoasVindas();
+		ProgramaController prco = new ProgramaController();
+		prco.menu();
 	}
 }
