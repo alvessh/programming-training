@@ -1,10 +1,10 @@
 package br.com.tarefa.model;
 
-public class PessoaTarefa {
+public class TarefaPessoa {
 	
 	private Integer id;
-	private Pessoa pessoaPrestador;
 	private Tarefa tarefa;
+	private Pessoa pessoaPrestador;
 	
 	public Integer getId() {
 		return id;
