@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando com o JS</title>
+</head>
+
+<body>
+    <h1>Hello Word</h1>
+    <button id="meuBotao" onclick="alteraTextoBotao()" style="color: white; background-color: red;">Enviar</button>
+
+    <div>
+        <p id="limite" style="color: red;"></p>
+    </div>
+</body>
+<script>
+    let count = 0;
+    let qtVezesUltrapassouLimite = 0;
+
+    function alteraTextoBotao() {
+        //validando se excedeu o limite de alteração do texto -- (aprendizado)
+        if (count === 12) {
+            qtVezesUltrapassouLimite++;
+
+            let texto = `Limite excedido de tentativas! ${qtVezesUltrapassouLimite} vezes`
+            document.getElementById("limite").innerHTML = `<b>${texto}</b>`;
+
+            // document.body.innerHTML += '<div>';
+            // document.body.innerHTML += '<p>' + texto + '</p>';
+            // document.body.innerHTML += `<p style="color: red"> <b>${texto}</b> </p>`;
+            // document.body.innerHTML += '</div>';
+        } else {
+            let botao = document.getElementById("meuBotao");
+
+            if (botao.innerText === "Enviar") {
+                botao.innerHTML = "Enviado!";
+                botao.style.color = 'white';
+                botao.style.backgroundColor = 'blue';
+
+                count++;
+            } else {
+                botao.innerHTML = "Enviar";
+                botao.style.color = 'white';
+                botao.style.backgroundColor = 'blue';
+                count++;
+            }
+        }
+
+        console.log(count);
+    }
+</script>
+
+</html>
