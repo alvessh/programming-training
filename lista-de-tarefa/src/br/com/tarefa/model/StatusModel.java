@@ -1,6 +1,6 @@
 package br.com.tarefa.model;
 
-public class StatusModel {
+public class StatusModel extends Model{
 	private Integer id;
 	private String descricao; //Pendente, Andamento, Concluido, Pausado
 	

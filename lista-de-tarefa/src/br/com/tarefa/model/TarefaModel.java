@@ -1,6 +1,6 @@
 package br.com.tarefa.model;
 
-public class TarefaModel {
+public class TarefaModel extends Model{
 	
 	private Integer id;
 	private String descricao;
