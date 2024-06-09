@@ -1,6 +1,8 @@
 package br.com.tarefa.model;
 
-public class PessoaModel {
+public class PessoaModel extends Model {
+	private static Integer proximoId = 0;
+	
 	private Integer id;
 	private String nome;
 	private Integer idade;
@@ -8,13 +10,26 @@ public class PessoaModel {
 	private String endereco;
 	private Integer tipoPessoa; //1 - Requisitante || 2 - Prestador
 	
-	public Integer getId() {
-		return id;
+	public PessoaModel() {
+		this.id = ++proximoId;
 	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getNome() {
+
+	@Override
+	public String getIdComPrefixo() {
+        return "PESSOA_" + this.id;
+    }
+	
+	@Override
+    public Integer getId() {
+        return this.id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
