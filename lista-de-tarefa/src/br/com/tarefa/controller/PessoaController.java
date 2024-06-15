@@ -49,4 +49,8 @@ public class PessoaController {
 		
 		prvi.tabelaPessoa(pessoaList);
 	}
+	
+	public Database<PessoaModel> getPessoaDatabase() {
+		return db;
+	}
 }

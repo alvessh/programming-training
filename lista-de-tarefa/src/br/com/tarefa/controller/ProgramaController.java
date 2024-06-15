@@ -8,26 +8,31 @@ public class ProgramaController {
 	Scanner teclado = new Scanner(System.in);
 
 	public void menu() {
-		PessoaController peco = new PessoaController();
+		PessoaController pessoaController = new PessoaController();
+		TarefaController tarefaController = new TarefaController();
 
 		ProgramaView inicio = new ProgramaView();
 		inicio.mensagemBoasVindas();
 
 		String opcao = "S";
 		do {
+			tarefaController.listarTarefa();
+			
 			inicio.menuOpcao();
 			inicio.informaOpcao();
 			opcao = teclado.nextLine();
 			
 			if (opcao.equals("A")) {
 				//listar pessoa
-				peco.listarPessoa();
+				pessoaController.listarPessoa();
 
 				//cadastrar pessoa
-				peco.cadastroPessoa();
+				pessoaController.cadastroPessoa();
 				
 			} else if (opcao.equals("B")) {
-				//Adicionar tarefa
+				//cadastar tarefa
+				
+				tarefaController.cadastroTarefa(pessoaController.getPessoaDatabase());
 			} else if (opcao.equals("C")) {
 				//Vincular prestador a tarefa
 			} else if (opcao.equals("D")) {
