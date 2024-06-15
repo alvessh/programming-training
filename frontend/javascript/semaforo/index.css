@@ -1,0 +1,44 @@
+/* Define estilos para o corpo (body) da página */
+body {
+    display: flex; /* Utiliza flexbox para centralizar elementos vertical e horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Estilos para o container do semáforo */
+.semaforo {
+    width: 100px; /* Largura do semáforo */
+    height: 300px; /* Altura do semáforo */
+    background-color: #333; /* Cor de fundo do semáforo */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra para efeito de profundidade */
+}
+
+/* Estilos para as luzes do semáforo */
+.luz {
+    width: 60px; /* Largura das luzes */
+    height: 60px; /* Altura das luzes */
+    background-color: #555; /* Cor de fundo das luzes */
+    margin: 20px auto; /* Margem superior e inferior 20px, centraliza horizontalmente */
+    border-radius: 50%; /* Bordas arredondadas para formar um círculo */
+    transition: background-color 0.5s; /* Transição suave de cor ao mudar a classe .active */
+}
+
+/* Estilos para a luz vermelha quando ativa */
+#red.active {
+    background-color: red; /* Cor vermelha para a luz vermelha */
+}
+
+/* Estilos para a luz amarela quando ativa */
+#yellow.active {
+    background-color: yellow; /* Cor amarela para a luz amarela */
+}
+
+/* Estilos para a luz verde quando ativa */
+#green.active {
+    background-color: green; /* Cor verde para a luz verde */
+}
