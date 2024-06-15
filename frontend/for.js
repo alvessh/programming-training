@@ -12,3 +12,19 @@ for (var i = 0; i < 10; i++) {
 const cars = ["carro ", "carro 2", "carro 3"];
 
 console.log(cars[1]);
+
+
+//TABUADA EXEMPLO 01 -- o algoritmo já faz direto do 1 -10
+for (let i = 1; i <= 10; i++ ) {
+    console.log('==================================')
+	for (let y = 1; y <= 10; y++) {
+		console.log(i + ' * ' + y + ' = ' + i*y);
+  }
+}
+
+
+//TABUADA EXEMPLO 02 -- solicitando ao usuário
+let numero = prompt('Digite um número que quer a tabuada: ')
+for (let y = 1; y <= 10; y++) {
+    console.log(numero + ' * ' + y + ' = ' + numero * y);
+}
