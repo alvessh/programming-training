@@ -1,6 +1,7 @@
 package br.com.tarefa.model;
 
 public class TarefaModel extends Model{
+	private static Integer proximoId = 0;
 	
 	private Integer id;
 	private String descricao;
@@ -8,6 +9,15 @@ public class TarefaModel extends Model{
 	private Integer percentual;
 	private PessoaModel pessoaPrestadorResponsavel;
 	private PessoaModel pessoaRequisitante;
+	
+	public TarefaModel() {
+		this.id = ++proximoId;
+	}
+	
+	@Override
+	public String getIdComPrefixo() {
+        return "TAREFA_" + this.id;
+    }
 	
 	public Integer getId() {
 		return id;

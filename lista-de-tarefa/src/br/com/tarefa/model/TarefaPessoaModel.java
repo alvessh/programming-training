@@ -1,10 +1,20 @@
 package br.com.tarefa.model;
 
 public class TarefaPessoaModel extends Model{
+	private static Integer proximoId = 0;
 	
 	private Integer id;
 	private TarefaModel tarefa;
 	private PessoaModel pessoaPrestador;
+	
+	public TarefaPessoaModel() {
+		this.id = ++proximoId;
+	}
+	
+	@Override
+	public String getIdComPrefixo() {
+        return "TAREFA_PESSOA_" + this.id;
+    }
 	
 	public Integer getId() {
 		return id;
