@@ -1,4 +1,4 @@
-# Explicação dos Conceitos de Orientação a Objetos utilizado na lista-de-tarefas
+# Explicação dos Conceitos de Orientação a Objetos
 
 ## 1. Classes e Objetos
 
@@ -9,11 +9,13 @@
   - `PessoaModel`
   - `TarefaModel`
   - `Database`
+  - `DatabaseManager` (implementando o padrão Singleton)
 
 - **Exemplo de Objetos:**
   - `pessoa1`, `pessoa2` (instâncias de `PessoaModel`)
   - `tarefa1` (instância de `TarefaModel`)
   - `pessoaDatabase`, `tarefaDatabase` (instâncias de `Database`)
+  - `DatabaseManager.getPessoaDatabase()`, `DatabaseManager.getTarefaDatabase()` (instâncias Singleton do `Database`)
 
 ## 2. Herança
 
@@ -63,3 +65,27 @@ A letra `T` é uma convenção comumente usada em Java para representar um tipo 
 - **Flexibilidade**: `T` permite que `Database` seja reutilizado com diferentes tipos de modelos sem precisar criar uma classe separada para cada tipo.
 - **Segurança de Tipos**: O uso de `T` garante que os tipos de dados passados para `Database` sejam verificados em tempo de compilação, reduzindo erros relacionados a tipos em tempo de execução.
 - **Abstração**: `T` abstrai o tipo de dados armazenados no banco de dados, permitindo que a implementação interna da classe `Database` seja independente do tipo de modelo.
+
+## 7. Singleton
+
+**Singleton** é um padrão de projeto que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a essa instância.
+
+- **Exemplo no Código:**
+  - A classe `DatabaseManager` implementa o padrão Singleton para gerenciar instâncias únicas do banco de dados para diferentes tipos de modelos (`PessoaModel` e `TarefaModel`).
+
+### **Classe `DatabaseManager`**
+
+A classe `DatabaseManager` garante que haja apenas uma instância do `Database` para cada tipo de modelo.
+
+## Uso do synchronized
+
+O modificador `synchronized` em métodos estáticos garante que apenas uma thread possa acessar o método por vez. Isso é crucial para o padrão Singleton em ambientes multithreaded, pois previne a criação de múltiplas instâncias do singleton.
+
+### Exemplo no Código:
+- Os métodos `getPessoaDatabase()` e `getTarefaDatabase()` são sincronizados para garantir que apenas uma instância de cada banco de dados seja criada, mesmo que múltiplas threads tentem acessar esses métodos simultaneamente.
+
+## Benefícios do Uso de Singleton
+
+- **Controle de Instância**: Garante que apenas uma instância de cada `Database` exista, evitando inconsistências.
+- **Acesso Global**: Fornece um ponto global de acesso às instâncias do banco de dados.
+- **Inicialização Tardia**: Instâncias são criadas apenas quando necessárias, economizando recursos.
