@@ -8,6 +8,7 @@ public class ProgramaController {
 	Scanner teclado = new Scanner(System.in);
 
 	public void menu() {
+		PessoaController peco = new PessoaController();
 
 		ProgramaView inicio = new ProgramaView();
 		inicio.mensagemBoasVindas();
@@ -19,8 +20,10 @@ public class ProgramaController {
 			opcao = teclado.nextLine();
 			
 			if (opcao.equals("A")) {
+				//listar pessoa
+				peco.listarPessoa();
+
 				//cadastrar pessoa
-				PessoaController peco = new PessoaController();
 				peco.cadastroPessoa();
 				
 			} else if (opcao.equals("B")) {
