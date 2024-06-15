@@ -15,11 +15,6 @@ public class PessoaModel extends Model {
 	}
 
 	@Override
-	public String getIdComPrefixo() {
-        return "PESSOA_" + this.id;
-    }
-	
-	@Override
     public Integer getId() {
         return this.id;
     }

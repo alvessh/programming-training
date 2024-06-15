@@ -14,11 +14,6 @@ public class TarefaModel extends Model{
 		this.id = ++proximoId;
 	}
 	
-	@Override
-	public String getIdComPrefixo() {
-        return "TAREFA_" + this.id;
-    }
-	
 	public Integer getId() {
 		return id;
 	}

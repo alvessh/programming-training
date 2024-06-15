@@ -10,11 +10,6 @@ public class StatusModel extends Model{
 		this.id = ++proximoId;
 	}
 	
-	@Override
-	public String getIdComPrefixo() {
-        return "STATUS_" + this.id;
-    }
-	
 	public Integer getId() {
 		return id;
 	}
