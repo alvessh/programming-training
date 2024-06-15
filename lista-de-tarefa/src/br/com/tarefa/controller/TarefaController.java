@@ -22,10 +22,7 @@ public class TarefaController {
 		prvi.inputText("número do Requisitante");
 		Integer pessoaRequisitanteId = teclado.nextInt();
 		
-		PessoaModel pessoaRequisitanteModel = new PessoaModel();
-		pessoaRequisitanteModel.setId(pessoaRequisitanteId);
-		
-		pessoaRequisitanteModel = pessoaDatabase.selectById(pessoaRequisitanteModel.getIdComPrefixo());
+		PessoaModel pessoaRequisitanteModel = pessoaDatabase.selectById(pessoaRequisitanteId);
 		
 		tarefaModel.setPessoaRequisitante(pessoaRequisitanteModel);
 		

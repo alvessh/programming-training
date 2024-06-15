@@ -21,10 +21,10 @@ public class CadastroPessoaTeste {
 		pessoaDatabase.insert(pessoa2);
 
 		// Buscar por ID
-		PessoaModel foundPessoa1 = pessoaDatabase.selectById(pessoa1.getIdComPrefixo());
+		PessoaModel foundPessoa1 = pessoaDatabase.selectById(pessoa1.getId());
 		System.out.println(foundPessoa1.getNome());
 
-		PessoaModel foundPessoa2 = pessoaDatabase.selectById(pessoa2.getIdComPrefixo());
+		PessoaModel foundPessoa2 = pessoaDatabase.selectById(pessoa2.getId());
 		System.out.println(foundPessoa2.getNome());
 
 		// Listar todos os registros
@@ -34,7 +34,7 @@ public class CadastroPessoaTeste {
 		}
 
 		// Atualizando registros
-		PessoaModel pessoaToUpdate = pessoaDatabase.selectById(foundPessoa2.getIdComPrefixo());
+		PessoaModel pessoaToUpdate = pessoaDatabase.selectById(foundPessoa2.getId());
 		pessoaToUpdate.setNome("José");
 		pessoaToUpdate.setEmail("js.gmail.oulotok.");
 		pessoaDatabase.update(pessoaToUpdate);
@@ -47,7 +47,7 @@ public class CadastroPessoaTeste {
 		}
 
 		// Deletar os registros
-		pessoaDatabase.delete(pessoa1.getIdComPrefixo());
+		pessoaDatabase.delete(pessoa1.getId());
 
 		//após delete
 		System.out.println("==================");
