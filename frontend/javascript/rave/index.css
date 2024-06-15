@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s;
+}
+
+audio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
