@@ -32,7 +32,7 @@ public class ProgramaController {
 			} else if (opcao.equals("B")) {
 				//cadastar tarefa
 				
-				tarefaController.cadastroTarefa(pessoaController.getPessoaDatabase());
+				tarefaController.cadastroTarefa();
 			} else if (opcao.equals("C")) {
 				//Vincular prestador a tarefa
 			} else if (opcao.equals("D")) {

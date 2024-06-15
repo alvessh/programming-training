@@ -3,14 +3,16 @@ import java.util.List;
 import java.util.Scanner;
 
 import br.com.tarefa.database.Database;
+import br.com.tarefa.database.DatabaseManager;
 import br.com.tarefa.model.PessoaModel;
 import br.com.tarefa.view.ProgramaView;
 
 public class PessoaController {
 	Scanner teclado = new Scanner(System.in);
-	Database<PessoaModel> db = new Database<PessoaModel>();
-	
+
 	public void cadastroPessoa() {
+		Database<PessoaModel> pessoaDatabase = DatabaseManager.getPessoaDatabase();
+		
 		ProgramaView prvi = new ProgramaView();
 		PessoaModel pessoaModel = new PessoaModel();
 		
@@ -39,18 +41,16 @@ public class PessoaController {
 		
 		teclado.nextLine();
 		
-		db.insert(pessoaModel);
+		pessoaDatabase.insert(pessoaModel);
 	}
 
 	public void listarPessoa() {
+		Database<PessoaModel> pessoaDatabase = DatabaseManager.getPessoaDatabase();		
+		
 		ProgramaView prvi = new ProgramaView();
 		
-		List<PessoaModel> pessoaList = db.selectAll();
+		List<PessoaModel> pessoaList = pessoaDatabase.selectAll();
 		
 		prvi.tabelaPessoa(pessoaList);
-	}
-	
-	public Database<PessoaModel> getPessoaDatabase() {
-		return db;
 	}
 }
