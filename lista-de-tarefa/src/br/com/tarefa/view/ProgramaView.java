@@ -1,6 +1,9 @@
 package br.com.tarefa.view;
 
+import java.util.List;
 import java.util.Scanner;
+
+import br.com.tarefa.model.PessoaModel;
 
 public class ProgramaView {
 	Scanner teclado = new Scanner(System.in);
@@ -47,5 +50,34 @@ public class ProgramaView {
 
 	public void informaOpcaoInvalida() {
 		System.out.println("Você informou uma opção inválida!");
+	}
+
+	public void tabelaPessoa(List<PessoaModel> pessoaList) {
+		System.out.println("===============================================================");
+		System.out.println("ID" + " - " + "Nome" + " - " + "Idade" + " - " + "E-mail" + " - " + "Endereço" + " - " + "Tipo da pessoa");
+		System.out.println("===============================================================");
+		
+		for (int i = 0; i < pessoaList.size(); i++) {
+			PessoaModel pessoaModel = pessoaList.get(i);
+			
+			Integer id = pessoaModel.getId();
+			String nome = pessoaModel.getNome();
+			Integer idade = pessoaModel.getIdade();
+			String email = pessoaModel.getEmail();
+			String endereco = pessoaModel.getEndereco();
+			Integer tipoPessoa = pessoaModel.getTipoPessoa();
+			String tipoPessoaStr = null;
+			if (tipoPessoa == 1) {
+				tipoPessoaStr = "Requisitante";
+			} else if (tipoPessoa == 2 ) {
+				tipoPessoaStr = "Prestador";
+			} else {
+				tipoPessoaStr = "Inválido";
+			}
+			
+			System.out.println(id + " - " + nome + " - " + idade + " - " + email + " - " + endereco + " - " + tipoPessoaStr);
+		}
+		
+		System.out.println("=====================Dados da pessoa=====================");
 	}
 }
