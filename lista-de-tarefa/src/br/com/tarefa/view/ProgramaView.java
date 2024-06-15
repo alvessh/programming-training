@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import br.com.tarefa.model.PessoaModel;
+import br.com.tarefa.model.TarefaModel;
 
 public class ProgramaView {
 	Scanner teclado = new Scanner(System.in);
@@ -79,5 +80,24 @@ public class ProgramaView {
 		}
 		
 		System.out.println("=====================Dados da pessoa=====================");
+	}
+	
+	public void tabelaTarefa(List<TarefaModel> tarefaList) {
+		System.out.println("===============================================================");
+		System.out.println("ID" + " - " + "Descrição" + " - " + "Requisitante" + " - " + "Status");
+		System.out.println("===============================================================");
+		
+		for (int i = 0; i < tarefaList.size(); i++) {
+			TarefaModel tarefaModel = tarefaList.get(i);
+			
+			Integer id = tarefaModel.getId();
+			String descricao = tarefaModel.getDescricao();
+			String nomeRequisitante = tarefaModel.getPessoaRequisitante().getNome();
+			String status = tarefaModel.getStatus().getDescricao();
+			
+			System.out.println(id + " - " + descricao + " - " + nomeRequisitante + " - " + status);
+		}
+		
+		System.out.println("=====================Dados da tarefa=====================");
 	}
 }

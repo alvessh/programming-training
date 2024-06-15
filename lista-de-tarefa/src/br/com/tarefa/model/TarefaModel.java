@@ -32,6 +32,7 @@ public class TarefaModel extends Model{
 		this.descricao = descricao;
 	}
 	public StatusModel getStatus() {
+		if (status == null) status = new StatusModel();
 		return status;
 	}
 	public void setStatus(StatusModel status) {
@@ -50,6 +51,7 @@ public class TarefaModel extends Model{
 		this.pessoaPrestadorResponsavel = pessoaPrestador;
 	}
 	public PessoaModel getPessoaRequisitante() {
+		if (pessoaRequisitante == null) pessoaRequisitante = new PessoaModel();
 		return pessoaRequisitante;
 	}
 	public void setPessoaRequisitante(PessoaModel pessoaRequisitante) {
