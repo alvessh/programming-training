@@ -84,7 +84,8 @@ public class ProgramaView {
 	
 	public void tabelaTarefa(List<TarefaModel> tarefaList) {
 		System.out.println("===============================================================");
-		System.out.println("ID" + " - " + "Descrição" + " - " + "Requisitante" + " - " + "Status");
+		System.out.println("ID" + " - " + "Descrição" + " - " 
+		+ "Requisitante" + " - " + "Status" + " - " + "Prestador");
 		System.out.println("===============================================================");
 		
 		for (int i = 0; i < tarefaList.size(); i++) {
@@ -94,8 +95,9 @@ public class ProgramaView {
 			String descricao = tarefaModel.getDescricao();
 			String nomeRequisitante = tarefaModel.getPessoaRequisitante().getNome();
 			String status = tarefaModel.getStatus().getDescricao();
+			String nomePrestador = tarefaModel.getPessoaPrestador().getNome();
 			
-			System.out.println(id + " - " + descricao + " - " + nomeRequisitante + " - " + status);
+			System.out.println(id + " - " + descricao + " - " + nomeRequisitante + " - " + status + " - " + nomePrestador);
 		}
 		
 		System.out.println("=====================Dados da tarefa=====================");

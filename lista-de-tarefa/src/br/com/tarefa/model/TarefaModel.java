@@ -40,6 +40,9 @@ public class TarefaModel extends Model{
 		this.percentual = percentual;
 	}
 	public PessoaModel getPessoaPrestador() {
+		if (pessoaPrestadorResponsavel == null) {
+			pessoaPrestadorResponsavel = new PessoaModel();
+		}
 		return pessoaPrestadorResponsavel;
 	}
 	public void setPessoaPrestador(PessoaModel pessoaPrestador) {

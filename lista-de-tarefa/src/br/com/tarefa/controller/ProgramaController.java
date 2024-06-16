@@ -8,13 +8,15 @@ public class ProgramaController {
 	Scanner teclado = new Scanner(System.in);
 
 	public void menu() {
-		PessoaController pessoaController = new PessoaController();
-		TarefaController tarefaController = new TarefaController();
+		StatusController statusController = new StatusController();
+		statusController.cadastro();
 
 		ProgramaView inicio = new ProgramaView();
 		inicio.mensagemBoasVindas();
 
 		String opcao = "S";
+		TarefaController tarefaController = new TarefaController();
+		PessoaController pessoaController = new PessoaController();
 		do {
 			tarefaController.listarTarefa();
 			
@@ -22,7 +24,9 @@ public class ProgramaController {
 			inicio.informaOpcao();
 			opcao = teclado.nextLine();
 			
+			
 			if (opcao.equals("A")) {
+				
 				//listar pessoa
 				pessoaController.listarPessoa();
 
@@ -31,10 +35,13 @@ public class ProgramaController {
 				
 			} else if (opcao.equals("B")) {
 				//cadastar tarefa
-				
 				tarefaController.cadastroTarefa();
 			} else if (opcao.equals("C")) {
+				//listar pessoa
+				pessoaController.listarPessoa();
+				
 				//Vincular prestador a tarefa
+				tarefaController.vincularPrestador();
 			} else if (opcao.equals("D")) {
 				//Informar percentual de uma tarefa
 			} else {
