@@ -23,6 +23,8 @@ public class TarefaController {
 		String descricao = teclado.nextLine();
 		tarefaModel.setDescricao(descricao);
 		
+		teclado.nextLine();
+		
 		prvi.inputText("número do Requisitante");
 		Integer pessoaRequisitanteId = teclado.nextInt();
 		
@@ -75,5 +77,44 @@ public class TarefaController {
 		
 		//atualizado o tarefa model no banco de dados, agora com o prestador.
 		tarefaDatabase.update(tarefaModel);
+	}
+
+	public void informaPercentual() {
+		ProgramaView prvi = new ProgramaView();
+		
+		prvi.inputText(" o codigo da tarefa");
+		Integer tarefaId = teclado.nextInt();
+		
+		Database<TarefaModel> tarefaDabase = DatabaseManager
+				.getTarefaDatabase();
+		
+		TarefaModel tarefaModel = tarefaDabase.selectById(tarefaId);
+		
+		if (tarefaModel == null) {
+			System.out.println("A tarefa informada "
+					+ "com o código: "+ tarefaId + ", não existe.");
+			
+			return;
+		}
+		
+		prvi.inputText(" o percentual realizado");
+		Integer percentual = teclado.nextInt();
+		
+		tarefaModel.setPercentual(percentual);
+		
+		if (percentual > 0 && percentual < 100) {
+			StatusModel status = DatabaseManager
+					.getStatusDatabase()
+					.selectById(ConstantUtils.ANDAMENTO);
+			
+			tarefaModel.setStatus(status);	
+		} else if (percentual == 100) {
+			StatusModel status = DatabaseManager
+					.getStatusDatabase()
+					.selectById(ConstantUtils.CONCLUIDO);
+			
+			tarefaModel.setStatus(status);
+		}
+		tarefaDabase.update(tarefaModel);
 	}
 }

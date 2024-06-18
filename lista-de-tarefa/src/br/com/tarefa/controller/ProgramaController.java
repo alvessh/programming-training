@@ -34,16 +34,26 @@ public class ProgramaController {
 				pessoaController.cadastroPessoa();
 				
 			} else if (opcao.equals("B")) {
+				//listar pessoa
+				pessoaController.listarPessoa();
+				
 				//cadastar tarefa
 				tarefaController.cadastroTarefa();
 			} else if (opcao.equals("C")) {
 				//listar pessoa
 				pessoaController.listarPessoa();
 				
+				//listar tarefa
+				tarefaController.listarTarefa();
+				
 				//Vincular prestador a tarefa
 				tarefaController.vincularPrestador();
 			} else if (opcao.equals("D")) {
+				//listar tarefa
+				tarefaController.listarTarefa();
+				
 				//Informar percentual de uma tarefa
+				tarefaController.informaPercentual();
 			} else {
 				inicio.informaOpcaoInvalida();
 			}
